@@ -30,8 +30,15 @@ var getWordCount= function(inputString){
 
 } return wordFrequencyObject;
 }
-
+/////class solution:
+//var word= splitIt[i]
+// if (typeof wordFrequencyObj[word]==="undefined"){
+//   wordCountObj[word=1]
+// }else {
+//   wordCountObj[word]= wordCountObj[word]+1}
+// }
 // **************
+//bad attempt#1:
 
 // var getWordCount= function(inputString){
 //   var splitIt= inputString.split(" ")

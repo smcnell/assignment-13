@@ -5,9 +5,26 @@
  // objects that meet the key-value conditions in the properties object.
 
 
+// input: list of objects and properties object
+// output: array of objects
 
+var where= function(arrOfObjects, criteriaObj){
+  var filteredListOfObjects=[]
 
+  for (var i=0; i < arrOfObjects.length; i=i +1){
+  // console.log(arrOfObjects[i])
+  var singleObject= arrOfObjects[i];
+  var objectMatchesAllCriteria=true;
 
+  for (var propStr in criteriaObj){
+    if(criteriaObj[propStr] !==singleObject[propStr]){
+      objectMatchesAllCriteria= false;
+      }
+    }if (objectMatchesAllCriteria===true){
+      filteredListOfObjects.push(singleObject)
+    }
+  } return filteredListOfObjects
+}
 
 
 

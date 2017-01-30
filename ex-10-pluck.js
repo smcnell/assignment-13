@@ -12,15 +12,19 @@
 
 
 var pluck= function(arrayOfObjects, inputName){
-  var outputString= ""
+  var outputArray= []
 
-  for (var property in arrayOfObjects){
+  for (var i= 0; i <arrayOfObjects.length; i++){
+    var oneObject= arrayOfObjects[i];
+
+// console.log(arrayOfObjects[0])
+  for (var property in oneObject){
     if (inputName=== property){
-      outputString= arrayOfObjects[property]
+      outputArray.push(oneObject[property])
     }
+  }
 
-
-  } return outputString
+} return outputArray
 
 
 }

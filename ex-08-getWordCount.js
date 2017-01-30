@@ -12,21 +12,25 @@
 
 
 var getWordCount= function(inputString){
+  var splitIt= inputString.split(" ");
+  var wordFrequencyObject={
+    word:0
+  };
 
-  var splitIt= inputString.split(" ")
-  word= splitIt[i]
 
-  var wordFrequencyObject= {}
 
   for (var i= 0; i <splitIt.length; i++){
-    var count=0
-    wordFrequencyObject[word]=count
-    if(wordFrequencyObject[word].indexOf >=0){
-      count= count+1;
-    }
+  var word= splitIt[i].toLowerCase()
 
-    } return wordFrequencyObject
+  if (wordFrequencyObject[word]>0){
+    wordFrequencyObject[word]++
+  } else {
+    wordFrequencyObject[word]=1;
+  }
+
+} return wordFrequencyObject;
 }
+
 // **************
 
 // var getWordCount= function(inputString){

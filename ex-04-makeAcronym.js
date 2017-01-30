@@ -17,10 +17,9 @@ var makeAcronym= function(inputString){
   for (var i=0; i < splitIt.length; i++) {
     var arrayElement= splitIt[i];
     if (arrayElement[0]){
-      finalArray=newArray.push(arrayElement[0]);
+      newArray.push(arrayElement[0].toUpperCase());
     }
-    forreal= finalArray.join();
-    forreal=outputString;
+    var outputString= newArray.join("");
   }return outputString;
 }
 // var joined=newArray.join();

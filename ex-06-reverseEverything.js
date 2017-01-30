@@ -19,9 +19,22 @@
 // Hint, you may want to use reverseObject() as a helper function.
 
 
+// input: arrayOfObjects
+// output: arrayOfObjects
+
+var reverseEverything= function(inputArrayOfObjects){
+  var outputArrayOfObjects= [];
+
+    for(var i=inputArrayOfObjects.length-1; i >= 0; i--){
+      var newObject= reverseObject(inputArrayOfObjects[i])
+      outputArrayOfObjects.push(newObject)
 
 
 
+    }return outputArrayOfObjects
+
+
+}
 
 
 

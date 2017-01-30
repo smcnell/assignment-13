@@ -7,12 +7,17 @@
 // input: object
 // output: object
 
-// var reverseObject= function(inputObject){
-//   var outputObject= {};
-//   for (var )
-//
-//
-// }
+var reverseObject= function(inputObject){
+  var outputObject= {};
+  for (var property in inputObject){
+    outputObject[inputObject[property]]=property;
+
+    // object1["occupants"] --> 4
+
+  }return outputObject;
+
+
+}
 
 
 

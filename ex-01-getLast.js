@@ -7,9 +7,15 @@
 
 
 var getLast= function(inputArray){
-  var lastElement= inputArray.slice(-1)[0];
+  var lastElement= inputArray[inputArray.length -1];
 return lastElement
 }
+
+
+// var lastElement= inputArray.slice(-1)[0];
+// return lastElement
+
+
 // input: array
 // output: element (number or string or boolean)
 //

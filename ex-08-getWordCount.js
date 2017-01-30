@@ -6,6 +6,52 @@
 // Note that your counts should NOT be case-sensitive.
 
 
+// input: string of text
+// output: object {word: number}
+
+
+
+var getWordCount= function(inputString){
+
+  var splitIt= inputString.split(" ")
+  word= splitIt[i]
+
+  var wordFrequencyObject= {}
+
+  for (var i= 0; i <splitIt.length; i++){
+    var count=0
+    wordFrequencyObject[word]=count
+    if(wordFrequencyObject[word].indexOf >=0){
+      count= count+1;
+    }
+
+    } return wordFrequencyObject
+}
+// **************
+
+// var getWordCount= function(inputString){
+//   var splitIt= inputString.split(" ")
+//
+//   for (var i=0; i<splitIt.length; i++){
+//
+//     var word=splitIt[i]
+//     var number=0;
+//
+//     var wordFrequencyObject= {
+//       word: number
+//     };
+//
+// if (wordFrequencyObject.word===word) {
+//   wordFrequencyObject.word=number++
+// }
+// }return wordFrequencyObject;
+//
+//   }
+
+
+
+
+
 
 
 

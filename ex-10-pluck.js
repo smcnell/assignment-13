@@ -6,7 +6,24 @@
 // e.g:
 // pluck(stooges, 'name') should yield the array, ['moe','larry','curly']
 
+// input: array of objects
+// ouput: value of property
 
+
+
+var pluck= function(arrayOfObjects, inputName){
+  var outputString= ""
+
+  for (var property in arrayOfObjects){
+    if (inputName=== property){
+      outputString= arrayOfObjects[property]
+    }
+
+
+  } return outputString
+
+
+}
 
 
 

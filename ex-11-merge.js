@@ -11,6 +11,23 @@
 
 
 
+// input: object, object
+// output: object combined
+
+var merge= function(object1, object2){
+  var combinedObject= {}
+
+  for (var property in object1){
+    combinedObject[property]= object1[property]
+  }
+  for (var property in object2){
+    combinedObject[property]= object2[property]
+  }
+
+
+return combinedObject
+
+}
 
 
 
